@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Testing webpage</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    
+</head>
+<body >
+<script src="main.js"></script>
+<script src="formvalidation.js"></script>
+
+    <div id='background'>
+        <div class="loading">
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    <form name="loginForm"
+    onsubmit="validateLoginForm();return false"
+    method="POST">
+    <div class="popup hide" id="pop">
+        <div class="login-box">
+            <div class="cancel" >
+                <button class="cancel-btn" type="button"  name="" onclick="cancel()">X</button>
+            </div>
+            <h1>Login</h1>
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Username" name="Username">
+            </div>
+        
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" name="Password">
+            </div>
+        
+        <input class="btn" type="submit" name="" value="Submit" >
+        
+            <div class="signin">
+                <p>don't have an accout?<button class="signin-btn" type="button" onclick="SwitchToSignin()">Sign-in</button></p>
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+    <form name="signinForm" 
+    onsubmit="validateSigninForm();return false"
+    method="POST">
+    <div class="popupS hideS" id="popS">
+        <div class="signin-box">
+            <div class="cancelS">
+                <button class="cancel-btn" type="button" onclick="cancelS()">X</button> 
+            </div>
+            <h1>Sign-in</h1>
+            <div class="textboxS">
+                <i class="fa fa-id-badge" aria-hidden="true"></i>
+                <input type="text" placeholder="Email-id" name="Email-id">
+            </div>
+
+            <div class="textboxS">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Username" name="Username">
+            </div>
+        
+            <div class="textboxS">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" placeholder="Password" name="Password">
+            </div>
+        
+        <input class="btnS" type="submit" name="" value="Submit" >
+        
+            <div class="Login">
+                <p>Have an accout?<button class="login-btn" type="button" onclick="SwitchToLogin()">Log-in</button></p>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <header class="menubar">
+        <div class="leftmenu">
+            <h1>Learn Coding</h1>
+        </div>
+        <nav >
+            <ul id="nav_links">
+                <li class="link"><a href="test.html">Home</a></li>
+                <li class="link"><a href="">Languages</a></li>
+                <li class="link"><a href="">Development</a></li>
+                <li class="link"><a href="aboutus.html">About Us</a></li>
+                <li class="link"><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <input class="logSign" type="submit" name="" value="Login/Sign-in">
+        
+    </header>
+
+    <div style="clear: both;"></div>
+
+    <div class="menu">
+        <div class="sub-menu-1">
+            <ul >
+                <li ><a href="">C-Porgramming</a></li>
+                <hr>
+                <li ><a href="">C++</a></li>
+                <hr>
+                <li ><a href="">JAVA</a></li>
+                <hr>
+                <li ><a href="">PYTHON</a></li>
+                <hr>
+                <li ><a href="">JAVASCRIPT</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="window">
+            <div class="galleryContainer">
+                <div class="slideShowContainer">
+                    <div id="playPause" onclick="playPauseSlides()"></div>
+                    <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+                    <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+                    <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+                    <div class="imageHolder">
+                        <img src="images/python.png">1366X768
+                        <p class="captionText">PYTHON</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="images/Android Development.png">
+                        <p class="captionText">ANDROID DEVELOPMENT</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="images/AI.png">
+                        <p class="captionText">ARTIFICIAL INTELLIGENCE</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="images/Web Development.png">
+                        <p class="captionText">WEB DEVELOPMENT</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="images/ML.png">
+                        <p class="captionText">MACHINE LEARNING</p>
+                    </div>
+                </div>
+                <div id="dotsContainer"></div>
+            </div>
+        </div>
+
+        <h1></h1>
+    </div>
+    
+    <div class="footer"><h4>@Copyright Reserved.</h></div>
+
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    
+</script>
+<script>
+    setTimeout(function(){  
+    $('#background').fadeToggle();
+    },3000);
+
+    setTimeout(function(){
+    document.getElementById('pop').classList.remove('hide');
+    },5000);
+
+    
+
+    function cancel(){
+        var cancelElement = document.getElementById("pop");
+        if(cancelElement.style.display === "none"){
+            cancelElement.style.display = "block";
+        }else{
+            cancelElement.style.display = "none";
+        }
+    }   
+
+    var j = 0;
+    function SwitchToSignin(){
+        var cancelLoginElement = document.getElementById("pop");
+        var cancelSigninElement = document.getElementById("popS");
+        
+        if(j == 0){
+            if(cancelLoginElement.style.display === "none"){
+                cancelLoginElement.style.display = "block";
+            }else{
+                cancelLoginElement.style.display = "none";
+            }
+            if(cancelSigninElement.style.display === "none"){
+                cancelSigninElement.style.display = "none";
+            }else{
+                cancelSigninElement.style.display = "block";
+            }
+            j++;
+        }else{
+            if(cancelLoginElement.style.display === "none"){
+                cancelLoginElement.style.display = "block";
+            }else{
+                cancelLoginElement.style.display = "none";
+            }
+            if(cancelSigninElement.style.display === "none"){
+                cancelSigninElement.style.display = "block";
+            }else{
+                cancelSigninElement.style.display = "nones";
+            }
+            j++;
+        }        
+
+    }
+
+    function SwitchToLogin(){
+        var cancelLoginElement = document.getElementById("pop");
+        var cancelSigninElement = document.getElementById("popS");
+        var i = 0;
+        if(cancelSigninElement.style.display === "none"){
+                cancelSigninElement.style.display = "block";
+            }else{
+                cancelSigninElement.style.display = "none";
+            }
+            if(cancelLoginElement.style.display === "none"){
+                cancelLoginElement.style.display = "block";
+            }else{
+                cancelLoginElement.style.display = "none";
+            }
+
+    }
+
+    function cancelS(){
+        var cancelElement = document.getElementById("popS");
+        if(cancelElement.style.display === "none"){
+            cancelElement.style.display = "block";
+        }else{
+            cancelElement.style.display = "none";
+        }
+    }    
+
+    
+    </script>
+
+<script src="myScript.js"></script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frequently Asked Question</title>
+  <link rel="stylesheet" type="text/css" href="faq.css">
+  <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+
+  <div class="menubar" >
+    <div class="leftmenu">
+        <p>Learn Coding</p>
+    </div>
+
+    <div class="responsive_menu">
+        <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="responsive_menu()"></i>
+    </div>
+
+    
+
+    <div class="menu_list" id="nav_links">
+        <ul>
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="language.html">Languages</a></li>
+            <li class="link"><a href="devlopment.html">Development</a></li>
+            <li class="link"><a href="aboutus.php">About Us</a></li>
+            <li class="link"><a href="frequently_asked_Question.html">FAQ</a></li>
+            <li class="link"><a href="login.php" class="logSign">Login/Sign-in</a></li>
+        </ul> 
+    </div>
+           
+</div>
+
+      <div class="middle">
+      <div class="container-fluid">
+        <h1>Frequently Asked Question(FAQS)</h1>
+        <div class="accordion"> 
+                     <h5>Q: How do I figure out what to learn?</h5>
+
+             </div>
+             <div class="panel">
+               <p>The most important thing is that you want to learn something that interests you, because once you start learning, you’ll be with this topic for a while. Choosing something just because it’s popular or what others are doing isn’t the way to go because if you don’t have a true interest in it, you’ll lose the motivation to learn! Spend some time seriously looking into the different tech career paths before choosing one to go down.</p>	
+             
+
+
+
+             </div>
+             <div class="accordion"> 
+                     <h5>Q: Should I learn Python 2 or Python 3?</h5>
+
+             </div>
+             <div class="panel">
+               <p>Now, in 2020, it’s a no-brainer: Python 3 is definitely the way to go. There are still some situations where picking up Python 2 might be advantageous, or you may just want to learn a little of the history and the differences between Python 2 and 3 for curiosity's sake, but job-wise, Python 3 is the clear winner. Here’s a blog post that outlines the reasons why.</p>	
+             
+
+
+
+             </div>
+             
+             <div class="accordion"> 
+                     <h5>Q: What’s the fastest way/shortcuts to learn to code?</h5>
+
+             </div>
+             <div class="panel">
+               <p>To be a good programmer, there are no shortcuts. That is not the right way to think about it :)
+                Instead, you should take time mastering the fundamentals. This will help you in the long run. I recommend listening to this episode of the podcast about why it’s important to focus on the fundamentals first.Learning to code isn’t something that can be rushed. It’s exactly the same as learning a new language. It takes time to master, but it’ll be worth it once you do.</p>	
+             
+
+
+
+             </div>
+             
+             <div class="accordion"> 
+                     <h5>Q: What is the best course of action for me to learn HTML, CSS, and Javascript?</h5>
+
+             </div>
+             <div class="panel">
+               <p>If you want to focus on front-end, you should definitely master these three first—especially JavaScript. If you know JavaScript well, it won’t be hard to become a front-end web developer. There are loads of JavaScript classes online for all different skill levels, whether you’re a beginner or looking to level up the skills you have already. I recommend looking into Team Treehouse, and Coursera also has a great class on HTML, CSS, and JavaScript.</p>	
+             
+
+
+
+             </div>
+      </div>
+
+
+</div>
+
+<div class="footer"><h4>@Copyright Reserved.</h></div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+</script>
+<script>
+
+function responsive_menu(){
+    var e = document.getElementById("nav_links");
+    if(e.className === 'menu_list'){
+        e.className += " responsive";
+    }else{
+        e.className = 'menu_list';
+    }
+}
+
+</script>
+
+<script src="myScript.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

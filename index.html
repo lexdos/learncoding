@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Testing webpage</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body >
+<script src="main.js"></script>
+<script src="formvalidation.js"></script>
+
+    <div id='background'>
+        <div class="loading">
+            <span>Loading...</span>
+        </div>
+    </div>
+
+    
+
+    <div class="menubar" >
+        <div class="leftmenu">
+            <p>Learn Coding</p>
+        </div>
+
+        <div class="responsive_menu">
+            <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="responsive_menu()"></i>
+        </div>
+
+        
+
+        <div class="menu_list" id="nav_links">
+            <ul>
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="language.html">Languages</a></li>
+                <li class="link"><a href="devlopment.html">Development</a></li>
+                <li class="link"><a href="aboutus.php">About Us</a></li>
+                <li class="link"><a href="frequently_asked_Question.html">FAQ</a></li>
+                <li class="link"><a href="login.php" class="logSign">Login/Sign-in</a></li>
+            </ul> 
+        </div>
+               
+    </div>
+
+
+    <div class="menu" style="margin-top: 120px;">
+        <div class="sub-menu-1">
+            <ul >
+                <li ><a href="C Programing.html">C-Porgramming</a></li>
+                <hr>
+                <li ><a href="c++.html">C++</a></li>
+                <hr>
+                <li ><a href="java.html">JAVA</a></li>
+                <hr>
+                <li ><a href="python.html">PYTHON</a></li>
+                <hr>
+                <li ><a href="javascript.html">JAVASCRIPT</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="window">
+           <div class="scroll">
+           <div class="galleryContainer">
+                <div class="slideShowContainer">
+                    <div id="playPause" onclick="playPauseSlides()"></div>
+                    <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+                    <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+                    <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+                    <div class="imageHolder">
+                        <img src="images/python.png">1366X768
+                        <p class="captionText">PYTHON</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="images/Android Development.png">
+                        <p class="captionText">ANDROID DEVELOPMENT</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="images/AI.png">
+                        <p class="captionText">ARTIFICIAL INTELLIGENCE</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="images/Web Development.png">
+                        <p class="captionText">WEB DEVELOPMENT</p>
+                    </div>
+                    <div class="imageHolder">
+                        <img src="images/ML.png">
+                        <p class="captionText">MACHINE LEARNING</p>
+                    </div>
+                </div>
+                <div id="dotsContainer"></div>
+            </div>
+
+            <div class="text">
+                <h2>HOW TO START LEARNING CODING? 6 TIME-SAVING TIPS FOR BEGINNERS</h2>
+                <p>If you want to learn how to code, taking the first step can feel difficult and even overwhelming.
+                    There’s so much technical terminology to catch up on and the more you look into it, the more jargon you discover.
+                    So, how to start learning coding the right way?
+                </p>
+                <br>
+                <p>Luckily, there are a few helpful tips you can use to make things easier for you. 
+                    The trick is to get into the right mindset and to make yourself a solid plan to follow.</p>
+                <br>
+                <h2>STEP #1: FIGURE OUT WHY YOU WANT TO LEARN PROGRAMMING</h2>
+                <p>Try to be aware of and analytical about the reasons why you wish to learn programming. 
+                    I don’t mean that you need to spend days or weeks figuring this out. 
+                    But take some time and make sure you know what’s motivating you.</p>
+                <br>
+                <h2>STEP #2: KNOW WHAT YOU WANT TO CREATE WITH CODING</h2>
+                <p>Now that you know why you’re interested in learning coding, 
+                it’s time to figure out what you want to build with your skills.</p>
+                <p>If you’re just getting started, you may feel like it’s way 
+                    too soon to know what you want to create in the long run, I know.
+                </p>
+                <br>
+                <h2>STEP #3: CHOOSE THE RIGHT PROGRAMMING LANGUAGE</h2>
+                <p>
+                Once you have a clear idea about what you want to build with coding, you come to the next question:</p>
+                <br>
+                <p>What skills do you need to learn to achieve your goal?</p>
+                <br>
+                <p>In other words, it’s time to choose your first programming language.</p> 
+                <p>You see, knowing what you wish to create is a problem you need to solve.</p> 
+                <p>And a programming language offers you the tools to solve that problem.
+                </p>
+            </div>
+           </div>
+        </div>
+
+    </div>
+    
+    <div class="footer"><h4>@Copyright Reserved.</h></div>
+
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    
+</script>
+<script>
+
+    function responsive_menu(){
+        var e = document.getElementById("nav_links");
+        if(e.className === 'menu_list'){
+            e.className += " responsive";
+        }else{
+            e.className = 'menu_list';
+        }
+    }
+
+    setTimeout(function(){  
+    $('#background').fadeToggle();
+    },3000);
+
+    setTimeout(function(){
+    document.getElementById('pop').classList.remove('hide');
+    },5000);
+    
+
+    
+</script>
+
+<script src="myScript.js"></script>
+
+
+
+</body>
+</html>
+

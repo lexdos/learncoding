@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Testing webpage</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    
+</head>
+<body >
+
+
+    <div class="menubar">
+        <div class="leftmenu">
+            <p>Learn Coding</p>
+        </div>
+
+        <div class="responsive_menu">
+            <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="responsive_menu()"></i>
+        </div>
+
+        
+
+        <div class="menu_list" id="nav_links">
+            <ul>
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="language.html">Languages</a></li>
+                <li class="link"><a href="devlopment.html">Development</a></li>
+                <li class="link"><a href="aboutus.php">About Us</a></li>
+                <li class="link"><a href="frequently_asked_Question.html">FAQ</a></li>
+                <li class="link"><a href="login.php" class="logSign">Login/Sign-in</a></li>
+            </ul> 
+        </div>
+        
+    </div>
+
+    
+
+    <div class="menu">
+        <div class="sub-menu-1">
+            <ul >
+                <li ><a href="C Programing.html">C-Porgramming</a></li>
+                <hr>
+                <li ><a href="c++.html">C++</a></li>
+                <hr>
+                <li ><a href="java.html">JAVA</a></li>
+                <hr>
+                <li ><a href="python.html">PYTHON</a></li>
+                <hr>
+                <li ><a href="javascript.html">JAVASCRIPT</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="window">
+            <div class="scroll">
+                <h2>Java Introduction</h2>
+                <br>
+                <h3>What is Java?</h3>
+                <br>
+                <p>Java is a popular programming language, created in 1995.</p>
+                <br>
+                <p>It is owned by Oracle, and more than 3 billion devices run Java.</p>
+                <br>
+                <p>It is used for :</p>
+                <ul>
+                    <li style="color: black;">Mobile applications (specially Android apps)</li>
+                    <li style="color: black;">Desktop applications</li>
+                    <li style="color: black;">Web applications</li>
+                    <li style="color: black;">Web servers and application servers</li>
+                    <li style="color: black;">Games</li>
+                    <li style="color: black;">Database connection</li>
+                    <li style="color: black;">And much, much more!</li>
+                </ul>
+                <br>
+                <h3>Why Use Java?</h3>
+                <ul>
+                    <li style="color: black;">Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                    <li style="color: black;">It is one of the most popular programming language in the world</li>
+                    <li style="color: black;">It is easy to learn and simple to use</li>
+                    <li style="color: black;">Web servers and application servers</li>
+                    <li style="color: black;">It is open-source and free</li>
+                    <li style="color: black;">It is secure, fast and powerful</li>
+                    <li style="color: black;">It has a huge community support (tens of millions of developers)</li>
+                    <li style="color: black;">Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs</li>
+                    <li style="color: black;">As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
+                </ul>
+                <br>
+                <h3>Java Quickstart</h3>
+                <br>
+                <p>In Java, every application begins with a class name, and that class must match the filename.</p>
+                <br>
+                <p>Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad).</p>
+                <br>
+                <p>The file should contain a "Hello World" message, which is written with the following code:</p>
+                <br>
+                <h4>Main.java</h4>
+                <br>
+                <div class="code"><pre class="prettyprint"><code>public class Main {
+                    &nbsp; public static void main(String[] args) {
+                    &nbsp;&nbsp;&nbsp; System.out.println(&quot;Hello World&quot;);
+                    &nbsp; }
+                    }
+                    </code></pre>
+                </div>
+                <br>
+                <h3>The main Method</h3>
+                <br>
+                <p>The <span style="color:crimson">main()</span> method is required and you will see it in every Java program:</p>
+                <br>
+                <div class="code">
+                    <pre class="prettyprint">public static void main(String[] args)</pre>
+                </div>
+                <br>
+                <p>Any code inside the <span style="color:crimson">main()</span> method will be executed. 
+                You don't have to understand the keywords before and after main. 
+                You will get to know them bit by bit while reading this tutorial.</p>
+                <br>
+                <p>For now, just remember that every Java program has a class name which must match the filename, and that every program must contain the main() method.</p>
+                <br>
+                <h3>System.out.println()</h3>
+                <br>
+                <p>Inside the <span style="color:crimson">main()</span> method, we can use the <span style="color:crimson">println()</span> method to print a line of text to the screen:</p>
+                <br>
+                <div class="code"><pre class="prettyprint"><code>public class Main {
+                    public static void main(String[] args) {
+                        System.out.println("Hello World");
+                    }
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer"><h4>@Copyright Reserved.</h></div>
+
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    function responsive_menu(){
+        var e = document.getElementById("nav_links");
+        if(e.className === 'menu_list'){
+            e.className += " responsive";
+        }else{
+            e.className = 'menu_list';
+        }
+    }
+</script>
+    
+
+
+</body>
+</html>
+

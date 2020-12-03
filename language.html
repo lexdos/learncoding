@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Testing webpage</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="tempdev.css">
+    <link rel="stylesheet" href="Language.css">
+    
+</head>
+<body >
+
+
+    <div class="menubar">
+        <div class="leftmenu">
+            <p>Learn Coding</p>
+        </div>
+
+        <div class="responsive_menu">
+            <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="responsive_menu()"></i>
+        </div>
+
+        
+
+        <div class="menu_list" id="nav_links">
+            <ul>
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="language.html">Languages</a></li>
+                <li class="link"><a href="devlopment.html">Development</a></li>
+                <li class="link"><a href="aboutus.php">About Us</a></li>
+                <li class="link"><a href="frequently_asked_Question.html">FAQ</a></li>
+                <li class="link"><a href="login.php" class="logSign">Login/Sign-in</a></li>
+            </ul> 
+        </div>
+        
+    </div>
+
+    
+
+    <div class="menu">
+        <div class="sub-menu-1">
+            <ul >
+                <li ><a href="C Programing.html">C-Porgramming</a></li>
+                <hr>
+                <li ><a href="c++.html">C++</a></li>
+                <hr>
+                <li ><a href="java.html">JAVA</a></li>
+                <hr>
+                <li ><a href="python.html">PYTHON</a></li>
+                <hr>
+                <li ><a href="javascript.html">JAVASCRIPT</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="window">
+            <div class="scroll">
+                <div class="lang_card">
+                    <h1>Java</h1>
+                    <p>Java is among the most popular programming languages out there, mainly because of how versatile and compatible it</p>
+                    <p>Java is among the most popular programming languages out there, mainly because of how versatile and compatible it is.</p>
+                    <p>Java can be used for a large number of things, including software development, mobile applications, and large systems development.</p>
+                    <p>As of 2019, 88% market share of all smartphones run on Android, the mobile operating system written in Java.</p>
+                    <p>Knowing Java opens a great deal of doors for you as a developer.</p>
+                    <h2 style="align-items: center; margin-top: 20px;">Start Learing</h2>
+                    <button class="start"><a href="java.html" style="text-decoration: none;">Click to start</a></button>
+                </div>
+
+                <div class="lang_card">
+                    <h1>Python</h1>
+                    <p>Python is a general-purpose, versatile and popular programming language.</p>
+                    <p>It’s great as a first language because it is concise and easy to read, and it is also a good language to have in any programmer’s</p>
+                    <p>stack as it can be used for everything from web development to software development and data science applications.</p>
+                    <p>Python is among the most popular programming languages out there, mainly because of how versatile and compatible it is.</p>
+                    <p>Python can be used for a large number of things, including software development, mobile applications, and large systems development.</p>
+                    <h2 style="align-items: center; margin-top: 50px;">Start Learing</h2>
+                    <button class="start"><a href="python.html" style="text-decoration: none;">Click to start</a></button>
+                </div>
+
+                <div class="lang_card">
+                    <h1>C++</h1>
+                    <p>C++ is a general-purpose, versatile and popular programming language.</p>
+                    <p>a Ph.D. student by the name of Bjarne Stroustrup tinkered around with the C programming language, which was and </p>
+                    <p>still is a language well-respected for its flexibility and low-level functionality.</p>
+                    <p>Little did he know, he created a new language that can now be found in:</p>
+                    <p>C++ is among the most popular programming languages out there, mainly because of how versatile and compatible it is.</p>
+                    <p>C++ can be used for a large number of things, including software development, mobile applications, and large systems development.</p>
+                    <h2 style="align-items: center; margin-top: 50px;">Start Learing</h2>
+                    <button class="start"><a href="c++.html" style="text-decoration: none;">Click to start</a></button>
+                </div>
+                
+                <div class="lang_card">
+                    <h1>Javascript++</h1>
+                    <p>Javascript is a general-purpose, versatile and popular scripting language.</p>
+                    <p>JavaScript is among the most powerful and flexible programming languages of the web.</p>
+                    <p>It powers the dynamic behavior on most websites, including this one. </p>
+                    <p>still is a language well-respected for its flexibility and low-level functionality.</p>
+                    <p>Javascript is also used to create backend of a website.</p>
+                    <h2 style="align-items: center; margin-top: 50px;">Start Learing</h2>
+                    <button class="start"><a href="javascript.html" style="text-decoration: none;">Click to start</a></button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer"><h4>@Copyright Reserved.</h></div>
+
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    function responsive_menu(){
+        var e = document.getElementById("nav_links");
+        if(e.className === 'menu_list'){
+            e.className += " responsive";
+        }else{
+            e.className = 'menu_list';
+        }
+    }
+</script>
+    
+
+
+</body>
+</html>
+

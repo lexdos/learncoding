@@ -1,0 +1,118 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+    margin: 0;
+    padding:0;
+}
+
+#popS{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+
+.signin-box{
+    z-index: 100;
+    width: 380px;
+    height: 440px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 3px 3px #f7f5f5;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 1);
+    padding: 40px;
+    border-radius: 20px;
+}
+.cancelS{
+    z-index: 100;
+    margin-left: 340px;
+}
+.cancel-btn{
+    z-index: 100;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 7px 10px;
+    background: transparent;
+    font-size: 10px;
+    background: #03a9f4;
+    color:white;
+}
+.cancel-btn:hover{
+    background: red;
+    color: white;
+}
+
+.signin-box h1{
+    z-index: 100;
+    text-align: center;
+    float: none;
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding: 13px;
+    color: #03a9f4;
+}
+.textboxS{
+    z-index: 100;
+    width: 100%;
+    overflow: hidden;
+    font-size: 30px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 2px solid #03a9f4;
+}
+.textboxS i{
+    z-index: 100;
+    width: 36px;
+    float: left;
+    text-align: center;
+    color: #03a9f4;
+}
+.textboxS input{
+    z-index: 100;
+    border: none;
+    outline: none;
+    background: none;
+    color: #03a9f4;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.btnS{
+    z-index: 100;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 20px 150px;
+}
+
+.btnS:hover{
+    box-shadow: 0px 0px 3px 3px #03a9f4;
+}
+
+.Login p{
+    z-index: 100;
+    color: #fff;
+}
+
+.login-btn{
+    z-index: 100;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    color: #03a9f4;
+    text-decoration: none;
+}

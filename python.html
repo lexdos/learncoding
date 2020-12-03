@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Testing webpage</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    
+</head>
+<body >
+
+
+    <div class="menubar">
+        <div class="leftmenu">
+            <p>Learn Coding</p>
+        </div>
+
+        <div class="responsive_menu">
+            <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="responsive_menu()"></i>
+        </div>
+
+        
+
+        <div class="menu_list" id="nav_links">
+            <ul>
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="language.html">Languages</a></li>
+                <li class="link"><a href="devlopment.html">Development</a></li>
+                <li class="link"><a href="aboutus.php">About Us</a></li>
+                <li class="link"><a href="frequently_asked_Question.html">FAQ</a></li>
+                <li class="link"><a href="login.php" class="logSign">Login/Sign-in</a></li>
+            </ul> 
+        </div>
+        
+    </div>
+
+    
+
+    <div class="menu">
+        <div class="sub-menu-1">
+            <ul >
+                <li ><a href="C Programing.html">C-Porgramming</a></li>
+                <hr>
+                <li ><a href="c++.html">C++</a></li>
+                <hr>
+                <li ><a href="java.html">JAVA</a></li>
+                <hr>
+                <li ><a href="python.html">PYTHON</a></li>
+                <hr>
+                <li ><a href="javascript.html">JAVASCRIPT</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="window">
+            <div class="scroll">
+              <h1>Python <span class="color_h1">Tutorial</span></h1>
+              <h2>What is Python?</h2>
+              <p>Python is a popular programming language. It was created by Guido van Rossum, 
+              and released in 1991.</p>
+              <p>It is used for:</p>
+               <ul>
+                   <li style="color: black;">web development (server-side), </li>
+                   <li style="color: black;">software development, </li>
+                   <li style="color: black;">mathematics,</li>
+                   <li style="color: black;">system scripting.</li>
+                </ul>
+               <h3>What can Python do?</h3>
+                <ul>
+                     <li style="color: black;">Python can be used on a server to create web applications.</li>
+                     <li style="color: black;">Python can be used alongside software to create workflows.</li>
+                     <li style="color: black;">Python can connect to database systems. It can also read and modify files.</li>
+                     <li style="color: black;">Python can be used to handle big data and perform complex mathematics.</li>
+                     <li style="color: black;">Python can be used for rapid prototyping, or for production-ready software development.</li>
+                 </ul>
+                <h3>Why Python?</h3>
+                <ul>
+                   <li style="color: black;">Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                   <li style="color: black;">Python has a simple syntax similar to the English language.</li>
+                   <li style="color: black;">Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                   <li style="color: black;">Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                   <li style="color: black;">Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                 </ul>
+       
+                   
+                   <h3>Python Syntax compared to other programming languages</h3>
+                           <ul>
+                               <li style="color: black;">Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+                               <li style="color: black;">Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+                               <li style="color: black;">Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+                             </ul>
+                               <div class="w3-example">
+                     <h3>Example</h3>
+                       <div class="w3-code notranslate pythonHigh"><span class="pythoncolor" style="color:black">
+                          <span class="pythonkeywordcolor" style="color:mediumblue">print</span>(<span class="pythonstringcolor" style="color:brown">"Hello, World!"</span>)<span class="pythonnumbercolor" style="color:red">
+                        </span> </span></div>
+                          <h1>Python <span class="color_h1">Syntax</span></h1>
+                          <h2>Execute Python Syntax</h2>
+                          <p>Python syntax can be executed by writing directly in the Command Line:</p>
+                          <div class="w3-code notranslate w3-black">
+                            &gt;&gt;&gt; print("Hello, World!")<br>
+                                           Hello, World!
+                              </div>
+                              <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+                              <div class="w3-example">
+                                    <div class="w3-code notranslate w3-black">
+                                  C:\Users\<em>Your Name</em>&gt;python myfile.py
+                                </div>
+                                <h2>Built-in Data Types</h2>
+                                <p>In programming, data type is an important concept.</p>
+                                <p>Variables can store data of different types, and different types can do 
+       different things.</p>
+                                 <p>Python has the following data types built-in by default, in these categories:</p>
+                                 <table class="w3-table">
+         <tbody><tr>
+           <td style="width:160px;">Text Type:</td>
+           <td><code class="w3-codespan">str</code></td>
+         </tr>
+         <tr>
+           <td>Numeric Types:</td>
+           <td><code class="w3-codespan">int</code>, <code class="w3-codespan">float</code>,
+           <code class="w3-codespan">complex</code></td>
+         </tr>
+         <tr>
+           <td>Sequence Types:</td>
+           <td><code class="w3-codespan">list</code>, <code class="w3-codespan">tuple</code>, 
+           <code class="w3-codespan">range</code></td>
+         </tr>
+         <tr>
+           <td>Mapping Type:</td>
+           <td><code class="w3-codespan">dict</code></td>
+         </tr>
+         <tr>
+           <td>Set Types:</td>
+           <td><code class="w3-codespan">set</code>, <code class="w3-codespan">frozenset</code></td>
+         </tr>
+         <tr>
+           <td>Boolean Type:</td>
+           <td><code class="w3-codespan">bool</code></td>
+         </tr>
+         <tr>
+           <td>Binary Types:</td>
+           <td><code class="w3-codespan">bytes</code>, <code class="w3-codespan">bytearray</code>, 
+           <code class="w3-codespan">memoryview</code></td>
+         </tr>
+       </tbody></table>
+                     <h2>Python Numbers</h2>
+                     <p>There are three numeric types in Python:</p>
+                      <ul>
+             <li><code class="w3-codespan">int</code></li>
+              <li><code class="w3-codespan">float</code></li>
+                 <li><code class="w3-codespan">complex</code></li>
+                     </ul>
+                     <p>Variables of numeric types are created when you assign a value to them:</p>
+                     <h3>Example</h3>
+                 <div class="w3-example">
+       
+       <div class="w3-code notranslate pythonHigh"><span class="pythoncolor" style="color:black">
+       x = <span class="pythonnumbercolor" style="color:red">1</span>&nbsp;&nbsp;&nbsp; <span class="pythonnumbercolor" style="color:red">
+       </span>  <span class="commentcolor" style="color:green"># int<br></span>y = <span class="pythonnumbercolor" style="color:red">2.8</span>&nbsp; <span class="commentcolor" style="color:green"># float<br></span>z = 1j&nbsp;&nbsp; <span class="commentcolor" style="color:green"># complex<br></span><span class="pythonnumbercolor" style="color:red">
+       </span> </span></div>
+       </div>
+       
+            </div>
+        </div>
+      </div>
+    </div>
+    <
+    
+    <div class="footer"><h4>@Copyright Reserved.</h></div>
+
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    function responsive_menu(){
+        var e = document.getElementById("nav_links");
+        if(e.className === 'menu_list'){
+            e.className += " responsive";
+        }else{
+            e.className = 'menu_list';
+        }
+    }
+</script>
+    
+
+
+</body>
+</html>
+
+
+
+

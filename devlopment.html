@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Testing webpage</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="Tempdev.css">
+    
+</head>
+<body >
+
+
+    <div class="menubar">
+        <div class="leftmenu">
+            <p>Learn Coding</p>
+        </div>
+
+        <div class="responsive_menu">
+            <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="responsive_menu()"></i>
+        </div>
+
+        
+
+        <div class="menu_list" id="nav_links">
+            <ul>
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="language.html">Languages</a></li>
+                <li class="link"><a href="devlopment.html">Development</a></li>
+                <li class="link"><a href="aboutus.php">About Us</a></li>
+                <li class="link"><a href="frequently_asked_Question.html">FAQ</a></li>
+                <li class="link"><a href="login.php" class="logSign">Login/Sign-in</a></li>
+            </ul> 
+        </div>
+        
+    </div>
+
+    
+
+    <div class="menu">
+        <div class="sub-menu-1">
+            <ul >
+                <li ><a href="C Programing.html">C-Porgramming</a></li>
+                <hr>
+                <li ><a href="c++.html">C++</a></li>
+                <hr>
+                <li ><a href="java.html">JAVA</a></li>
+                <hr>
+                <li ><a href="python.html">PYTHON</a></li>
+                <hr>
+                <li ><a href="javascript.html">JAVASCRIPT</a></li>
+                <hr>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="window">
+            <div class="scroll">
+                <div class="content">
+                    <div class="card">
+                        <h2 style="color:  #03a9f4;">Android Development</h2>
+                        <br>
+                        <h1>Build Basic Android Apps with Java</h1>
+                        <br>
+                        <p>Some of our favorite apps are the simplest ones - and you don’t</p>
+                        <p>need any coding experience to start making your own. Throughout</p>
+                        <p>this Skill Path, you’ll build a basic Android app from start to finish.</p>
+                        <p>Get ready to see your work on the really small screen.</p>
+                        <br>
+                        <h2 style="align-items: center; margin-top: 50px;">Start Learing</h2>
+                        <button class="start">Click to start</button>
+                    </div>
+
+
+                </div>
+                
+                <div class="content">
+                    <div class="card" >
+                        <h2 style="color: #03a9f4;">Web Development</h2>
+                        <br>
+                        <h1>Build Basic Web Apps with Html,CSS & Javascript</h1>
+                        <br>
+                        <p>Go from no-code to an in-demand junior web developer, at a</p>
+                        <p>fraction of the cost of a bootcamp. Start with the front-end by</p>
+                        <p>learning HTML, CSS, and JavaScript. Then, master the back-end and</p>
+                        <p>APIs to round out your full-stack skills.</p>
+                        <br>
+                        <h2 style="align-items: center; margin-top: 50px;">Start Learing</h2>
+                        <button class="start">Click to start</button>
+                    </div>
+                </div>
+                
+                <div class="content">
+                    <div class="card">
+                        <h2 style="color:  #03a9f4;">Machine Learning</h2>
+                        <br>
+                        <h1>Learn the Basics of Machine Learning</h1>
+                        <br>
+                        <p>Machine learning, the field of computer science that gives </p>
+                        <p>computer systems the ability to learn from data, is one of the hottest</p>
+                        <p> topics in computer science. Machine Learning is transforming the world:</p>
+                        <p>from spam filtering in social networks to computer vision for self-driving cars.</p>
+                        <br>
+                        <h2 style="align-items: center; margin-top: 50px;">Start Learing</h2>
+                        <button class="start">Click to start</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer"><h4>@Copyright Reserved.</h></div>
+
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+    function responsive_menu(){
+        var e = document.getElementById("nav_links");
+        if(e.className === 'menu_list'){
+            e.className += " responsive";
+        }else{
+            e.className = 'menu_list';
+        }
+    }
+</script>
+    
+
+
+</body>
+</html>
+

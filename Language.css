@@ -1,0 +1,22 @@
+
+
+.lang_card{
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    height: 500px;
+    background-color: rgba(147, 133, 245);
+    color: white;
+    border-radius: 20px;
+}
+
+.start{
+    margin-top: 20px;
+    border: 3px white solid;
+    border-color: #fff;
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+}
